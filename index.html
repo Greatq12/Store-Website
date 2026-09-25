@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ethibsan Fashion and Accessories</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <div class="brand-name">Ethibsan<span>FASHION &amp; ACCESSORIES</span></div>
+    </div>
+    <nav class="links">
+      <a href="#dirac">Dirac</a>
+      <a href="#perfumes">Perfumes</a>
+      <a href="#creams">Creams</a>
+      <a href="#rings">Rings &amp; Jewelry</a>
+      <a href="#accessories">Accessories</a>
+      <a href="#order">How to Order</a>
+    </nav>
+    <a class="nav-cta" href="#order">Order Now</a>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('nav.links').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Bridal &amp; Everyday Somali Fashion</div>
+      <h1>Dirac, perfume &amp; jewelry for <em>every</em> celebration</h1>
+      <p class="lede">Hand-picked dirac styles, oud and dab-qaad perfumes, glow creams, and bridal jewelry — curated for weddings, xeedho nights and every occasion in between.</p>
+      <div class="hero-btns">
+        <a class="btn btn-gold" href="#dirac">Shop Dirac</a>
+        <a class="btn btn-outline" href="#order">Order via WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="ring1"></div>
+      <div class="ring2"></div>
+      <p class="cap">100+ dirac styles, new arrivals added weekly</p>
+    </div>
+  </div>
+</section>
+
+<section id="dirac">
+  <div class="section-head">
+    <div class="kicker">Our Signature Collection</div>
+    <h2>Dirac Styles</h2>
+    <p>Flowing, hand-selected dirac in every price range — from everyday wear to full bridal pieces. Filter by budget or search a style by name.</p>
+  </div>
+
+  <div class="filter-bar">
+    <div class="chip-row" id="diracFilters">
+      <button class="chip" data-filter="all" aria-pressed="true">All Styles</button>
+      <button class="chip" data-filter="under50" aria-pressed="false">Under $50</button>
+      <button class="chip" data-filter="50-100" aria-pressed="false">$50–$100</button>
+      <button class="chip" data-filter="100-150" aria-pressed="false">$100–$150</button>
+      <button class="chip" data-filter="150plus" aria-pressed="false">$150+</button>
+    </div>
+    <div class="search-box">
+      <input id="diracSearch" type="text" placeholder="Search a dirac style...">
+    </div>
+  </div>
+
+  <div class="grid" id="diracGrid"></div>
+  <p class="empty-note" id="diracEmpty">No styles match that search — try another name or filter.</p>
+  <button class="load-more" id="diracLoadMore">Show more styles</button>
+</section>
+
+<section id="perfumes" class="alt-bg">
+  <div class="section-head">
+    <div class="kicker">Fragrance</div>
+    <h2>Perfumes &amp; Oud</h2>
+    <p>Long-lasting attars, oud oils and dab-qaad blends for weddings and everyday elegance.</p>
+  </div>
+  <div class="grid" id="perfumeGrid"></div>
+</section>
+
+<section id="creams">
+  <div class="section-head">
+    <div class="kicker">Skincare</div>
+    <h2>Creams &amp; Body Glow</h2>
+    <p>Brightening, nourishing and bridal-prep creams for radiant, event-ready skin.</p>
+  </div>
+  <div class="grid" id="creamGrid"></div>
+</section>
+
+<section id="rings" class="alt-bg">
+  <div class="section-head">
+    <div class="kicker">Jewelry</div>
+    <h2>Rings &amp; Jewelry</h2>
+    <p>Gold-tone rings, bangles and bridal sets to complete the look.</p>
+  </div>
+  <div class="grid" id="ringGrid"></div>
+</section>
+
+<section id="accessories">
+  <div class="section-head">
+    <div class="kicker">Finishing Touches</div>
+    <h2>Accessories</h2>
+    <p>Garbasaar shawls, hijab pins, clutch bags and henna kits — the small details that finish a bridal look.</p>
+  </div>
+  <div class="grid" id="accessoryGrid"></div>
+</section>
+
+<section class="alt-bg">
+  <div class="about">
+    <div class="about-visual"></div>
+    <div class="about-copy">
+      <div class="kicker">Our Story</div>
+      <h2>Somali elegance, made easy to shop</h2>
+      <p>Ethibsan Fashion and Accessories brings together the dirac styles, fragrances and jewelry that make Somali celebrations feel complete — sourced and styled with care, and shipped with love.</p>
+      <p>Every piece is chosen with weddings, xeedho and everyday beauty in mind, so you can shop confidently at any price point.</p>
+      <div class="stat-row">
+        <div class="stat"><b>100+</b><span>Dirac styles</span></div>
+        <div class="stat"><b>4</b><span>Product categories</span></div>
+        <div class="stat"><b>1:1</b><span>Personal WhatsApp ordering</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="section-head">
+    <div class="kicker">Simple &amp; Personal</div>
+    <h2>How to Order</h2>
+    <p>No account needed — pick a piece, message us, and we'll confirm sizing, payment and delivery with you directly.</p>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="num">01</div>
+      <h3>Browse &amp; pick</h3>
+      <p>Tap "Order via WhatsApp" on any item, or browse everything and message us your favorites.</p>
+    </div>
+    <div class="step">
+      <div class="num">02</div>
+      <h3>Confirm details</h3>
+      <p>We'll confirm size, color and any customizations, plus shipping cost and timeline.</p>
+    </div>
+    <div class="step">
+      <div class="num">03</div>
+      <h3>Pay &amp; receive</h3>
+      <p>Secure your order and we'll package and ship it — with care, right to your door.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-band">
+  <h2>Ready to shop the collection?</h2>
+  <p>Message us on WhatsApp or Instagram — we're happy to help you find the right dirac, fragrance or jewelry for your event.</p>
+  <div class="contact-btns">
+    <a class="btn btn-gold" id="waMain" href="#" target="_blank" rel="noopener">Message on WhatsApp</a>
+    <a class="btn btn-outline" href="https://instagram.com/ethibsanfashion" target="_blank" rel="noopener">Follow on Instagram</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>© <span id="year"></span> Ethibsan Fashion and Accessories</div>
+    <div style="display:flex;gap:18px;flex-wrap:wrap;">
+      <a href="#dirac">Dirac</a>
+      <a href="#perfumes">Perfumes</a>
+      <a href="#creams">Creams</a>
+      <a href="#rings">Rings &amp; Jewelry</a>
+      <a href="#accessories">Accessories</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Message us on WhatsApp">💬</a>
+
+<script src="script.js"></script>
+</body>
+</html>
